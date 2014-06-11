@@ -31,15 +31,20 @@ body {
 $color1: #CCCCCC;
 $color2: #106bd3; 
 
-@mixin commonsize {
+@mixin commonsize() {
     width: 325px;
     height: 330px;
 }
 
-@import partial;
+// @mixin commontext() {
+//     font-size: 18px;
+//     font-family: 'Oswald';
+// }
+
+// @import partial;
 
 #background-one {
-    background-image: url(../surfandpaddle/images/header.jpg);
+    background-image: url(../images/header.jpg);
     height: 520px;
     width: 1300px;
 }
@@ -88,7 +93,7 @@ $color2: #106bd3;
     padding: 10px;
     padding: 6px;
     margin-top: 15px;
-    font-style: 'oswald';
+    font-style: 'Oswald';
     font-size: 22px;
     font-weight: bold;
 }
@@ -102,12 +107,13 @@ $color2: #106bd3;
 }
 
 p {
-    @include commontext(18px,Oswald);
+    font-size: 18px;
+    font-family: 'Oswald');
 }
 
 .sectionsidebartext {
-    @include commontext(18px,Oswald);
-
+    font-size: 18px;
+    font-family: 'Oswald');
     color: $color1;
 }
 
@@ -119,7 +125,7 @@ p {
 #containertwo {
     width: 960px;
     margin: 0 auto;
-    height: 1050px;
+    height: 1072px;
 }
 
 #columnone {
@@ -176,7 +182,7 @@ p {
 }
 
 h1 {
-    font-family: 'oswald';
+    font-family: 'Oswald';
     font-size: 60px;
     line-height: 1.2em;
 }
@@ -227,7 +233,8 @@ h1 {
 
 
 h4 {
-    @include commontext(18px,Oswald);
+    font-size: 18px;
+    font-family: 'Oswald');
     text-align: left;
     color: $color2;
     height: 8px;
